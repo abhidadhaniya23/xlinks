@@ -22,7 +22,7 @@ const UserLinkPage = () => {
     const { userData } = useContext(googleUser);
 
     const gettingUsers = async () => {
-        const { data } = await axios.get(`/api/user/${id}`);
+        const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/${id}`);
         // console.log(data.data[0]);
         if (data.results > 0) {
             setUser(data.data[0]);

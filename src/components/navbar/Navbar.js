@@ -21,7 +21,7 @@ const Navbar = () => {
 
     const getUserData = async () => {
         // console.log(userData.googleId);
-        const gettingUserData = await axios.get(`/api/user/get/gId/${userData.googleId}`);
+        const gettingUserData = await axios.get(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/get/gId/${userData.googleId}`);
         setUser(gettingUserData.data.data[0]);
         // console.log("username:", user.username);
     };

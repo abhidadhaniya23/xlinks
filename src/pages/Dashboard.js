@@ -38,7 +38,7 @@ const Dashboard = () => {
     const { buymeacoffee, setbuymeacoffee } = useContext(googleUser);
 
     const getUserData = async () => {
-        const existingUserData = await axios.get(`/api/user/get/gId/${userData.googleId}`);
+        const existingUserData = await axios.get(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/get/gId/${userData.googleId}`);
         setUserByEmail(existingUserData.data.data[0]);
     };
 
@@ -117,14 +117,14 @@ const Dashboard = () => {
                 pintrest: pintrest,
                 buymeacoffee: buymeacoffee,
             };
-            const availableUsername = await axios.get(`/api/user/${username}`);
+            const availableUsername = await axios.get(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/${username}`);
             console.log(availableUsername);
             // console.log(availableUsername.data.data[0].googleId !== userData.googleId);
             // console.log(availableUsername.data.data[0].googleId, userData.googleId);
             if (availableUsername.data.results > 0 && availableUsername.data.data[0].googleId !== userData.googleId) {
                 notify("Username already taken.", "error");
             } else {
-                await axios.post("/api/user/update", data);
+                await axios.post(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/update`, data);
                 notify("Your profile updated.", "success");
                 navigate(`/${username}`);
             }

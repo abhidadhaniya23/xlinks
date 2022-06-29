@@ -33,7 +33,7 @@ export const GoogleLoginBtn = () => {
             googleId: profileObj.googleId,
             profilePic: profileObj.imageUrl,
         };
-        const result = await axios.post("/api/user/add", user);
+        const result = await axios.post(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/add`, user);
         const { data } = result;
         // console.log(data.newUser);
         if (data.newUser) {
