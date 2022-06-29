@@ -192,3 +192,28 @@ const PopUpModel = ({ loggedIn }) => {
 };
 
 export default Navbar;
+//  @testing-library/jest-dom @testing-library/react @testing-library/user-event axios cacache env-cmd framer-motion gapi-script preline react react-device-detect react-dom react-icons react-meta-tags react-router-dom react-scripts react-toastify web-vitals
+// npm install react-google-login --legacy-peer-deps
+/**
+ * 
+ * 
+        // "@testing-library/jest-dom": "^5.16.4",
+        // "@testing-library/react": "^13.3.0",
+        // "@testing-library/user-event": "^13.5.0",
+        // "axios": "^0.27.2",
+        // "cacache": "^16.1.1",
+        // "env-cmd": "^10.1.0",
+        // "framer-motion": "^6.3.14",
+        // "gapi-script": "^1.2.0",
+        // "preline": "^1.1.1",
+        // "react": "^18.2.0",
+        // "react-device-detect": "^2.2.2",
+        // "react-dom": "^18.2.0",
+        // "react-google-login": "^5.2.2",
+        // "react-icons": "^4.4.0",
+        // "react-meta-tags": "^1.0.1",
+        // "react-router-dom": "^6.3.0",
+        // "react-scripts": "^2.1.3",
+        // "react-toastify": "^9.0.5",
+        // "web-vitals": "^2.1.4"
+ */
