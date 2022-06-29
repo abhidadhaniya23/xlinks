@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Inter:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Manrope", sans-serif;
+}
+.spin-animation {
+    animation: spin 0.5s linear reverse infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.phone-card-shadow {
+    -webkit-filter: drop-shadow(0px 5px 30px #8eceff);
+    filter: drop-shadow(0px 5px 30px #8eceff);
+}
+.card-shadow {
+    -webkit-filter: drop-shadow(0px 5px 30px #e6f4ff);
+    filter: drop-shadow(0px 5px 30px #e6f4ff);
+}
+.img-shadow {
+    /* @apply phone-card-shadow md:screen-card-shadow; */
+    /* --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); */
+    /* --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color); */
+    /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+    /* -webkit-filter: drop-shadow(rgba(100, 100, 111, 0.2) 0px 7px 29px 0px); */
+    /* -webkit-filter: drop-shadow((0px 0px 0px rgba(255, 255, 255, 0.8))); */
+}
+button,
+textarea,
+input,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.icon-style {
+    @apply hover:text-blue duration-200 cursor-pointer text-2xl m-2;
+}
+input,
+textarea {
+    @apply outline-none;
+}
+
+.input-style {
+    @apply border border-solid border-gray-300 focus:ring-1 duration-200 focus:ring-blue;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 500px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #080b2e2e;
+    border-radius: 500px;
+    transition: 0.4s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4dafff;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #041727 #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: #008cff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
