@@ -148,21 +148,21 @@ const Dashboard = () => {
                         <hr className="my-5" />
                     </div>
                     <p className="text-red-500 text-sm mb-4">* All Required</p>
-                    <form onSubmit={onSubmit} autocomplete="off">
+                    <form onSubmit={onSubmit} autoComplete="off">
                         <div>
                             <label htmlFor="input-label" className="block text-sm font-medium ml-1 -mb-2 mt-1 dark:text-white">
                                 Name
                             </label>
-                            <input type="text" autocomplete="off" value={userData.name} required name="fullName" className="py-3 px-4 block w-full rounded-md input-style text-md my-4" readOnly />
+                            <input type="text" autoComplete="off" value={userData.name} required name="fullName" className="py-3 px-4 block w-full rounded-md input-style text-md my-4" readOnly />
                             <label htmlFor="input-label" className="block text-sm font-medium ml-1 -mb-2 mt-1 dark:text-white">
                                 Email
                             </label>
-                            <input type="email" autocomplete="off" value={userData.email} required name="email" className="py-3 px-4 block w-full rounded-md input-style text-md my-4" readOnly />
+                            <input type="email" autoComplete="off" value={userData.email} required name="email" className="py-3 px-4 block w-full rounded-md input-style text-md my-4" readOnly />
                             <label htmlFor="input-label" className="block text-sm font-medium ml-1 -mb-2 mt-1 dark:text-white">
                                 Username
                             </label>
                             <input
-                                autocomplete="off"
+                                autoComplete="off"
                                 type="text"
                                 value={username}
                                 onChange={(e) => {
