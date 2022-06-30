@@ -1,0 +1,67 @@
+4:59:14 PM: Build ready to start
+4:59:16 PM: build-image version: 72a309a113b53ef075815b129953617827965e48 (focal)
+4:59:16 PM: build-image tag: v4.8.2
+4:59:16 PM: buildbot version: 515e5c33287d8b909c004fcf2e460e8645e8c1c6
+4:59:16 PM: Fetching cached dependencies
+4:59:17 PM: Failed to fetch cache, continuing with build
+4:59:17 PM: Starting to prepare the repo for build
+4:59:17 PM: No cached dependencies found. Cloning fresh repo
+4:59:17 PM: git clone https://github.com/abhidadhaniya23/xlinks
+4:59:18 PM: Preparing Git Reference refs/heads/master
+4:59:18 PM: Parsing package.json dependencies
+4:59:19 PM: Starting build script
+4:59:19 PM: Installing dependencies
+4:59:19 PM: Python version set to 2.7
+4:59:20 PM: v16.15.1 is already installed.
+4:59:20 PM: Now using node v16.15.1 (npm v8.11.0)
+4:59:21 PM: Started restoring cached build plugins
+4:59:21 PM: Finished restoring cached build plugins
+4:59:21 PM: Attempting ruby version 2.7.2, read from environment
+4:59:22 PM: Using ruby version 2.7.2
+4:59:22 PM: Using PHP version 8.0
+4:59:23 PM: No npm workspaces detected
+4:59:23 PM: Started restoring cached node modules
+4:59:23 PM: Finished restoring cached node modules
+4:59:23 PM: Installing NPM modules using NPM version 8.11.0
+4:59:23 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+4:59:23 PM: npm WARN config location in the cache, and they are managed by
+4:59:23 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+4:59:24 PM: npm WARN config tmp This setting is no longer used.  npm stores temporary files in a special
+4:59:24 PM: npm WARN config location in the cache, and they are managed by
+4:59:24 PM: npm WARN config     [`cacache`](http://npm.im/cacache).
+4:59:26 PM: npm ERR! code ERESOLVE
+4:59:26 PM: npm ERR! ERESOLVE could not resolve
+4:59:26 PM: npm ERR!
+4:59:26 PM: npm ERR! While resolving: react-google-login@5.2.2
+4:59:26 PM: Creating deploy upload records
+4:59:26 PM: npm ERR! Found: react@18.2.0
+4:59:26 PM: npm ERR! node_modules/react
+4:59:26 PM: npm ERR!   react@"^18.2.0" from the root project
+4:59:26 PM: npm ERR!   peer react@"^18.0.0" from @testing-library/react@13.3.0
+4:59:26 PM: npm ERR!   node_modules/@testing-library/react
+4:59:26 PM: Failed during stage 'building site': Build script returned non-zero exit code: 1 (https://ntl.fyi/exit-code-1)
+4:59:26 PM: npm ERR!     @testing-library/react@"^13.3.0" from the root project
+4:59:26 PM: npm ERR!   6 more (react-device-detect, react-dom, react-icons, ...)
+4:59:26 PM: npm ERR!
+4:59:26 PM: npm ERR! Could not resolve dependency:
+4:59:26 PM: npm ERR! peer react@"^16 || ^17" from react-google-login@5.2.2
+4:59:26 PM: npm ERR! node_modules/react-google-login
+4:59:26 PM: npm ERR!   react-google-login@"^5.2.2" from the root project
+4:59:26 PM: npm ERR!
+4:59:26 PM: npm ERR! Conflicting peer dependency: react@17.0.2
+4:59:26 PM: npm ERR! node_modules/react
+4:59:26 PM: npm ERR!   peer react@"^16 || ^17" from react-google-login@5.2.2
+4:59:26 PM: npm ERR!   node_modules/react-google-login
+4:59:26 PM: npm ERR!     react-google-login@"^5.2.2" from the root project
+4:59:26 PM: npm ERR!
+4:59:26 PM: npm ERR! Fix the upstream dependency conflict, or retry
+4:59:26 PM: npm ERR! this command with --force, or --legacy-peer-deps
+4:59:26 PM: npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+4:59:26 PM: npm ERR!
+4:59:26 PM: npm ERR! See /opt/buildhome/.npm/eresolve-report.txt for a full report.
+4:59:26 PM: npm ERR! A complete log of this run can be found in:
+4:59:26 PM: npm ERR!     /opt/buildhome/.npm/_logs/2022-06-30T11_29_24_273Z-debug-0.log
+4:59:26 PM: Error during NPM install
+4:59:26 PM: Build was terminated: Build script returned non-zero exit code: 1
+4:59:26 PM: Failing build: Failed to build site
+4:59:26 PM: Finished processing build request in 10.069600902s
