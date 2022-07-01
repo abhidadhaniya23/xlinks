@@ -4,12 +4,12 @@ import Card from "../components/card/Card";
 import { useParams } from "react-router-dom";
 import googleUser from "../context/googleUser";
 import LoadingAnimation from "../components/loading/LoadingAnimation";
-import MetaTags from "react-meta-tags";
 import { FiTwitter } from "react-icons/fi";
 import { TwitterShareButton } from "react-share";
 import Footer from "../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
 import { notify } from "../components/toast/Toast";
+import { Helmet } from "react-helmet";
 
 const UserLinkPage = () => {
     const { loading, setLoading } = useContext(googleUser);
@@ -40,7 +40,7 @@ const UserLinkPage = () => {
 
     return (
         <>
-            <MetaTags>
+            <Helmet>
                 <title>{`${id} | xLinks.Pro`}</title>
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AbhiDadhaniya3" />
@@ -49,7 +49,7 @@ const UserLinkPage = () => {
                 <meta name="twitter:description" content="I've create my profile in xLinks.pro" />
                 <meta name="twitter:creator" content="@AbhiDadhaniya3" />
                 <meta property="twitter:image" content="https://cdn.woorise.com/wp-content/uploads/2020/10/bio-link-tools.png" />
-            </MetaTags>
+            </Helmet>
             {loading ? (
                 <LoadingAnimation />
             ) : (

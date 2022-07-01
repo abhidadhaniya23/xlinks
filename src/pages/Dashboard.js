@@ -5,7 +5,7 @@ import googleUser from "../context/googleUser";
 import { notify } from "../components/toast/Toast";
 import LoadingAnimation from "../components/loading/LoadingAnimation";
 import { useNavigate } from "react-router-dom";
-import { MetaTags } from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Footer from "../components/footer/Footer";
 
 const Dashboard = () => {
@@ -135,9 +135,9 @@ const Dashboard = () => {
 
     return (
         <>
-            <MetaTags>
+            <Helmet>
                 <title>Dashboard || xLinks.Pro</title>
-            </MetaTags>
+            </Helmet>
             {loading && <LoadingAnimation />}
             {userByEmail && !loading && (
                 <div className="container px-10 md:px-32 lg:px-[24rem] my-20">

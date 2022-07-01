@@ -1,4 +1,3 @@
-import { MetaTags } from "react-meta-tags";
 import profileCard from "../../src/assets/profile_card.png";
 import { TbWorld } from "react-icons/tb";
 import arrowSvg from "../../src/assets/arrowSvg.png";
@@ -7,13 +6,14 @@ import { FcGoogle } from "react-icons/fc";
 import Footer from "../components/footer/Footer";
 import { isMobile } from "react-device-detect";
 import logo from "../assets/logo.png";
+import { Helmet } from "react-helmet";
 
 const Homepage = () => {
     return (
         <>
-            <MetaTags>
+            <Helmet>
                 <title>xLinks.Pro</title>
-            </MetaTags>
+            </Helmet>
             <section className="text-font flex flex-col justify-center items-center overflow-x-hidden">
                 <div className="flex flex-col justify-center text-center items-center container mx-auto py-10">
                     <div className="mt-10 flex flex-col justify-center items-center text-center">
