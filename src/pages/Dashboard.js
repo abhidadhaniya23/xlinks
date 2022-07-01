@@ -1,7 +1,21 @@
+// import icons
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { FiFacebook } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
+import { FiYoutube } from "react-icons/fi";
+import { ImBlog } from "react-icons/im";
+import { TbWorld } from "react-icons/tb";
+import { TbBrandTelegram } from "react-icons/tb";
+import { ImPinterest2 } from "react-icons/im";
+import { TbCoffee } from "react-icons/tb";
+
 import React from "react";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import InputLink from "../components/LinkInputs.js/InputLink";
+// import InputLink from "../components/LinkInputs.js/InputLink";
 import googleUser from "../context/googleUser";
 import notify from "../components/toast/notify";
 import LoadingAnimation from "../components/loading/LoadingAnimation";
@@ -53,7 +67,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         setLoading(true);
-        if (userData != {}) {
+        if (userData !== {}) {
             getUserData();
         }
     }, [userData]);
@@ -190,7 +204,104 @@ const Dashboard = () => {
                         <p className="text-red-500 text-sm">All fields aren't required but still fill some links for better profile.</p>
                         <div>
                             <div>
-                                <InputLink platform="instagram" iconName="BsInstagram" placeholder="instagram.com/username" />
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <BsInstagram className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setinstagram(e.target.value)} placeholder="instagram.com/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <FiTwitter className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => settwitter(e.target.value)} placeholder="twitter.com/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <FiGithub className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setgithub(e.target.value)} placeholder="github.com/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <AiOutlineLinkedin className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setlinkedin(e.target.value)} placeholder="linkedin/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <FiFacebook className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setfacebook(e.target.value)} placeholder="facebook.com/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <TbBrandDiscord className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setdiscord(e.target.value)} placeholder="discordapp.com/users/xxxx" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <FiYoutube className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setyoutube(e.target.value)} placeholder="youtube.com/c/channel-name" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <ImBlog className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setblogs(e.target.value)} placeholder="Medium, Hashnode, Dev Community etc" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <TbWorld className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setwebsite(e.target.value)} placeholder="Personal or any company website" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <TbBrandTelegram className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => settelegram(e.target.value)} placeholder="t.me/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <ImPinterest2 className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setpintrest(e.target.value)} placeholder="pintrest.com/username" />
+                                    </div>{" "}
+                                </div>
+                                <div className="flex rounded-md my-3">
+                                    <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                                        <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
+                                            <TbCoffee className="text-blue icon-style" />
+                                        </span>
+                                        <input onChange={(e) => setbuymeacoffee(e.target.value)} placeholder="buymeacoffee.com/username" />
+                                    </div>{" "}
+                                </div>
+
+                                {/* <InputLink platform="instagram" iconName="BsInstagram" placeholder="instagram.com/username" />
                                 <InputLink platform="twitter" iconName="FiTwitter" placeholder="twitter.com/username" />
                                 <InputLink platform="github" iconName="FiGithub" placeholder="github.com/username" />
                                 <InputLink platform="linkedin" iconName="AiOutlineLinkedin" placeholder="linkedin/username" />
@@ -201,7 +312,7 @@ const Dashboard = () => {
                                 <InputLink platform="website" iconName="TbWorld" placeholder="Personal or any company website" />
                                 <InputLink platform="telegram" iconName="TbBrandTelegram" placeholder="t.me/username" />
                                 <InputLink platform="pintrest" iconName="ImPinterest2" placeholder="pintrest.com/username" />
-                                <InputLink platform="buymeacoffee" iconName="TbCoffee" placeholder="buymeacoffee.com/username" />
+                                <InputLink platform="buymeacoffee" iconName="TbCoffee" placeholder="buymeacoffee.com/username" /> */}
                             </div>
                         </div>
                         <input type="submit" className="bg-blue py-3 px-4 my-10 text-white rounded-md focus:ring-2 duration-200 cursor-pointer ring-offset-2 ring-blue/30" value="Update your profile" />
@@ -217,21 +328,21 @@ export default Dashboard;
 
 //
 
-{
-    /**
-     * name, profession,profile pic, email, username,bio, links,
-     * Links
-     * -instagram
-     * -twitter
-     * -github
-     * -linkedin
-     * -facebook
-     * -youtube
-     * -blogs
-     * -website
-     * -discord
-     * -telegram
-     * -pintrest
-     * -buymeacoffee
-     */
-}
+// {
+/**
+ * name, profession,profile pic, email, username,bio, links,
+ * Links
+ * -instagram
+ * -twitter
+ * -github
+ * -linkedin
+ * -facebook
+ * -youtube
+ * -blogs
+ * -website
+ * -discord
+ * -telegram
+ * -pintrest
+ * -buymeacoffee
+ */
+// }

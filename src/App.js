@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import UserLinkPage from "./pages/UserLinkPage";
 import googleUser from "./context/googleUser";
 import { Toast } from "./components/toast/Toast";
+import "../src/index.css";
 import Dashboard from "./pages/Dashboard";
 import Signin from "./pages/Signin";
 import Homepage from "./pages/Homepage";
@@ -47,12 +48,6 @@ function App() {
             </BrowserRouter>
         </googleUser.Provider>
     );
-}
-{
-    /* <img src="https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=396" className="w-48 rounded-full border-2 border-solid border-blue-400 p-2" alt={user.fullName} /> */
-}
-{
-    /* <a href={process.env.NODE_ENV == "production" ? "/googleRedirect" : "http://localhost:5000/googleRedirect"}>Continue with Google</a> */
 }
 
 export default App;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 // import { useEffect, useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
@@ -25,62 +25,62 @@ const Card = ({ userData }) => {
             {userData.socialMedia && (
                 <div className="flex flex-row flex-wrap justify-center items-center px-10">
                     {userData.socialMedia.instagram && (
-                        <a target={"_blank"} href={userData.socialMedia.instagram}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.instagram}>
                             <BsInstagram className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.twitter && (
-                        <a target={"_blank"} href={userData.socialMedia.twitter}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.twitter}>
                             <FiTwitter className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.github && (
-                        <a target={"_blank"} href={userData.socialMedia.github}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.github}>
                             <FiGithub className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.linkedin && (
-                        <a target={"_blank"} href={userData.socialMedia.linkedin}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.linkedin}>
                             <AiOutlineLinkedin className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.facebook && (
-                        <a target={"_blank"} href={userData.socialMedia.facebook}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.facebook}>
                             <FiFacebook className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.discord && (
-                        <a target={"_blank"} href={userData.socialMedia.discord}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.discord}>
                             <TbBrandDiscord className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.youtube && (
-                        <a target={"_blank"} href={userData.socialMedia.youtube}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.youtube}>
                             <FiYoutube className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.blog && (
-                        <a target={"_blank"} href={userData.socialMedia.blog}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.blog}>
                             <ImBlog className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.pinterest && (
-                        <a target={"_blank"} href={userData.socialMedia.pinterest}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.pinterest}>
                             <ImPinterest2 className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.telegram && (
-                        <a target={"_blank"} href={userData.socialMedia.telegram}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.telegram}>
                             <TbBrandTelegram className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.buymeacoffee && (
-                        <a target="_blank" href={userData.socialMedia.buymeacoffee}>
+                        <a rel="noopener noreferrer" target="_blank" href={userData.socialMedia.buymeacoffee}>
                             <TbCoffee className="icon-style" />
                         </a>
                     )}
                     {userData.socialMedia.website && (
-                        <a target={"_blank"} href={userData.socialMedia.website}>
+                        <a rel="noopener noreferrer" target={"_blank"} href={userData.socialMedia.website}>
                             <TbWorld className="icon-style" />
                         </a>
                     )}

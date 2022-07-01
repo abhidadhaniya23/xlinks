@@ -6,7 +6,7 @@ import { FiTwitter } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlineInformationCircle } from "react-icons/hi";
 import { RiGoogleLine } from "react-icons/ri";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import googleUser from "../../context/googleUser";
 import logo from "../../../src/assets/logo.png";
 
@@ -90,15 +90,15 @@ const Navbar = () => {
                                         <CgProfile className="float-left text-lg" />
                                         Profile
                                     </Link>
-                                    <a href="https://www.web-developer-abhi.me/" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.web-developer-abhi.me/" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <FaLaptopCode className="float-left text-lg" />
                                         Portfolio
                                     </a>
-                                    <a href="https://www.twitter.com/abhidadhaniya3" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.twitter.com/abhidadhaniya3" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <FiTwitter className="float-left text-lg" />
                                         Twitter
                                     </a>
-                                    <a href="https://www.buymeacoffee.com/AbhiDadhaniya07" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.buymeacoffee.com/AbhiDadhaniya07" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <TbCoffee className="float-left text-lg" />
                                         Buy Me A Coffee
                                     </a>
