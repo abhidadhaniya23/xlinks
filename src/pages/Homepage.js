@@ -1,3 +1,4 @@
+import React from "react";
 import profileCard from "../../src/assets/profile_card.png";
 import { TbWorld } from "react-icons/tb";
 import arrowSvg from "../../src/assets/arrowSvg.png";

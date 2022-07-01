@@ -1,3 +1,4 @@
+import React from "react";
 import { GoogleLoginBtn, GoogleLogoutBtn } from "../components/GoogleBtn/Google";
 import signinPic from "../../src/assets/signin.png";
 import Footer from "../components/footer/Footer";

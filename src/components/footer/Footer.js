@@ -1,3 +1,4 @@
+import React from "react";
 const Footer = () => {
     return (
         <footer className="py-3 text-xl flex flex-row justify-center items-center text-gray-900">

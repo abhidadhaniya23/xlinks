@@ -1,3 +1,4 @@
+import React from "react";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
@@ -10,7 +11,7 @@ import { TbWorld } from "react-icons/tb";
 import { TbBrandTelegram } from "react-icons/tb";
 import { ImPinterest2 } from "react-icons/im";
 import { TbCoffee } from "react-icons/tb";
-import { FiMail } from "react-icons/fi";
+// import { FiMail } from "react-icons/fi";
 import { useContext } from "react";
 import googleUser from "../../context/googleUser";
 

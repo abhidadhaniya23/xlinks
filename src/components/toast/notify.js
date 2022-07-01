@@ -1,4 +1,6 @@
+import React from "react";
 import { toast } from "react-toastify";
+import { isMobile } from "react-device-detect";
 import "react-toastify/dist/ReactToastify.css";
 const notify = (msg, type) => {
     isMobile
