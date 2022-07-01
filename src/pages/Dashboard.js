@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import InputLink from "../components/LinkInputs.js/InputLink";
 import googleUser from "../context/googleUser";
-import { notify } from "../components/toast/Toast";
+import notify from "../components/toast/notify";
 import LoadingAnimation from "../components/loading/LoadingAnimation";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";

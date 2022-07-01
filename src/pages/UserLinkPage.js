@@ -8,7 +8,7 @@ import { FiTwitter } from "react-icons/fi";
 import { TwitterShareButton } from "react-share";
 import Footer from "../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-import { notify } from "../components/toast/Toast";
+import notify from "../components/toast/notify";
 import { Helmet } from "react-helmet";
 
 const UserLinkPage = () => {

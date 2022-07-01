@@ -5,7 +5,7 @@ import { useEffect, useContext } from "react";
 import axios from "axios";
 import { gapi } from "gapi-script";
 import googleUser from "../../context/googleUser";
-import { notify } from "../toast/Toast";
+import notify from "../../components/toast/notify";
 
 const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
