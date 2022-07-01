@@ -51,7 +51,7 @@ export const GoogleLoginBtn = () => {
         <GoogleLogin
             clientId={googleClientId}
             render={(renderProps) => (
-                <button onClick={renderProps.onClick} id="hs-dropdown-custom-trigger" className="hs-dropdown-toggle py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue transition-all text-sm dark:bg-gray-800 dark:hover:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                <button onClick={renderProps.onClick} id="hs-dropdown-custom-trigger" className="hs-dropdown-toggle py-3 px-6 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blueColor transition-all text-sm dark:bg-gray-800 dark:hover:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                     <FcGoogle className="text-2xl" />
                     <span className="text-gray-600 dark:text-gray-400 text-xl">Google Signin</span>
                 </button>
@@ -95,7 +95,7 @@ export const GoogleLogoutBtn = () => {
         <GoogleLogout
             clientId={googleClientId}
             render={(renderProps) => (
-                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="flex items-center w-full gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                <button onClick={renderProps.onClick} disabled={renderProps.disabled} className="flex items-center w-full gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
                     <IoLogOutOutline className="float-left text-lg" />
                     Logout
                 </button>

@@ -20,7 +20,7 @@ const Card = ({ userData }) => {
             {/* <img src={"https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=396"} alt={user.name} className="-mt-28 w-40 shadow-lg bg-white rounded-full p-2" /> */}
             <img src={userData.profilePic} alt={userData.fullName} className="-mt-20 md:-mt-28 w-28 md:w-40 shadow-lg bg-white rounded-full p-2" referrerPolicy="no-referrer" rel="noreferrer" />
             <h1 className="text-3xl text-center md:text-5xl font-bold mt-5 md:mt-8">{userData.fullName}</h1>
-            {userData.profession && <h4 className="text-lg md:text-xl mt-2 my-5 text-blue/90">~ {userData.profession}</h4>}
+            {userData.profession && <h4 className="text-lg md:text-xl mt-2 my-5 text-blueColor/90">~ {userData.profession}</h4>}
 
             {userData.socialMedia && (
                 <div className="flex flex-row flex-wrap justify-center items-center px-10">
@@ -86,8 +86,8 @@ const Card = ({ userData }) => {
                     )}
                 </div>
             )}
-            {/* <a href={`mailto:${userData.email}`} className="text-base md:text-xl mt-2 my-5 bg-blue py-1 px-3 rounded-md text-white/90 duration-150 ring-offset-0 active:ring-2 ring-blue/30 flex flex-row justify-center items-center"> */}
-            <a href={`mailto:${userData.email}`} className="text-base md:text-xl mt-2 my-5 bg-blue/10 py-1 px-3 text-blue focus:outline-none rounded-full focus:ring-2 focus:ring-blue/60 focus:ring-offset-2 focus:ring-offset-white transition-all flex flex-row justify-center items-center">
+            {/* <a href={`mailto:${userData.email}`} className="text-base md:text-xl mt-2 my-5 bg-blueColor py-1 px-3 rounded-md text-white/90 duration-150 ring-offset-0 active:ring-2 ring-blueColor/30 flex flex-row justify-center items-center"> */}
+            <a href={`mailto:${userData.email}`} className="text-base md:text-xl mt-2 my-5 bg-blueColor/10 py-1 px-3 text-blueColor focus:outline-none rounded-full focus:ring-2 focus:ring-blueColor/60 focus:ring-offset-2 focus:ring-offset-white transition-all flex flex-row justify-center items-center">
                 <FiMail className="text-lg md:text-2xl mx-2" />
                 {userData.email}
             </a>

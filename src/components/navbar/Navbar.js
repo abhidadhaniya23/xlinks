@@ -37,7 +37,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-blue text-sm py-4 dark:bg-gray-800 text-white">
+            <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-blueColor text-sm py-4 dark:bg-gray-800 text-white">
                 <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
                     <div className="flex items-center justify-between">
                         <Link className="flex-none text-xl flex flex-row justify-center items-center font-semibold rounded-full px-3.5 py-1 ring-0 focus:ring-2 ring-offset-0 focus:ring-white/50 duration-300" to={"/"}>
@@ -45,7 +45,7 @@ const Navbar = () => {
                             xLinks.Pro
                         </Link>
                         <div className="sm:hidden">
-                            <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-slide-up" aria-controls="navbar-collapse-slide-up" aria-label="Toggle navigation">
+                            <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blueColor-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-slide-up" aria-controls="navbar-collapse-slide-up" aria-label="Toggle navigation">
                                 <svg className="hs-collapse-open:hidden w-4 h-4" width={16} height={16} fill="currentColor" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                                 </svg>
@@ -65,7 +65,7 @@ const Navbar = () => {
                             </TwitterShareButton>
                             {userData !== {} && user && user.username ? (
                                 <>
-                                    <Link className="font-medium text-blue-500" aria-current="page" to={`${user.username}`}>
+                                    <Link className="font-medium text-blueColor-500" aria-current="page" to={`${user.username}`}>
                                         <CgProfile className="float-left mr-1 text-lg" />
                                         Your Profile
                                     </Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
                             ) : (
                                 <PopUpModel loggedIn={userData.email ? true : false} />
                             )}
-                            {/* <Link className="font-medium text-blue-500" aria-current="page" to={"/discover"}>
+                            {/* <Link className="font-medium text-blueColor-500" aria-current="page" to={"/discover"}>
                                 <TbUserSearch className="float-left mr-1 text-lg" />
                                 Discover
                             </Link> */}
@@ -86,19 +86,19 @@ const Navbar = () => {
                                     </svg>
                                 </button>
                                 <div className="hs-mega-menu-content hs-mega-menu-open:opacity-100 hs-mega-menu-open:mt-0 opacity-0 mt-2 top-full hidden z-10 rounded-md before:absolute before:-top-5 before:left-0 before:w-full before:h-5 w-full bg-white p-2 sm:w-48 sm:transition-all transition-[opacity,margin] sm:absolute sm:shadow-md sm:duration-300 dark:bg-gray-800" aria-labelledby="hs-mega-menu-slide-up-dr">
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" to={"/abhidadhaniya"}>
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" to={"/abhidadhaniya"}>
                                         <CgProfile className="float-left text-lg" />
                                         Profile
                                     </Link>
-                                    <a href="https://www.web-developer-abhi.me/" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.web-developer-abhi.me/" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <FaLaptopCode className="float-left text-lg" />
                                         Portfolio
                                     </a>
-                                    <a href="https://www.twitter.com/abhidadhaniya3" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.twitter.com/abhidadhaniya3" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <FiTwitter className="float-left text-lg" />
                                         Twitter
                                     </a>
-                                    <a href="https://www.buymeacoffee.com/AbhiDadhaniya07" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    <a href="https://www.buymeacoffee.com/AbhiDadhaniya07" rel="noopener noreferrer" target="_blank" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                                         <TbCoffee className="float-left text-lg" />
                                         Buy Me A Coffee
                                     </a>
@@ -107,7 +107,7 @@ const Navbar = () => {
                             <div className="hs-dropdown relative">
                                 {userData.email ? (
                                     <>
-                                        <button id="hs-dropdown-custom-trigger" type="button" className="hs-dropdown-toggle py-1 pl-1 pr-3 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue transition-all text-sm dark:bg-gray-800 dark:hover:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                        <button id="hs-dropdown-custom-trigger" type="button" className="hs-dropdown-toggle py-1 pl-1 pr-3 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blueColor transition-all text-sm dark:bg-gray-800 dark:hover:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                             <img className="w-8 h-auto rounded-full" src={userData.imageUrl} alt={""} referrerPolicy="no-referrer" />
                                             <span className="text-gray-600 font-medium truncate max-w-[7.5rem] dark:text-gray-400">Account</span>
                                             <svg className="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +115,7 @@ const Navbar = () => {
                                             </svg>
                                         </button>
                                         <div className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700" aria-labelledby="hs-dropdown-custom-trigger">
-                                            <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" to={"/dashboard"}>
+                                            <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blueColor-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" to={"/dashboard"}>
                                                 <MdOutlineDashboard className="float-left mr-1 text-lg" />
                                                 Dashboard
                                             </Link>
@@ -166,18 +166,18 @@ const PopUpModel = ({ loggedIn }) => {
                             <p className="mt-1 text-gray-800 dark:text-gray-400 text-base">
                                 {!loggedIn ? "Signin first to create profile" : "To Create your profile, Go to"}
                                 {loggedIn ? (
-                                    <Link to="/dashboard" className="hs-dropdown-toggle text-blue hover:text-blue/70 focus:outline-none rounded-sm ml-1.5 focus:ring-2 focus:ring-blue/70 focus:ring-offset-2 focus:ring-offset-white transition-all" data-hs-modal="#hs-slide-down-animation-modal">
-                                        {/* <Link to="/dashboard" className="hs-dropdown-toggle bg-blue text-white py-1 px-2 rounded-md" data-hs-modal="#hs-slide-down-animation-modal"> */}
+                                    <Link to="/dashboard" className="hs-dropdown-toggle text-blueColor hover:text-blueColor/70 focus:outline-none rounded-sm ml-1.5 focus:ring-2 focus:ring-blueColor/70 focus:ring-offset-2 focus:ring-offset-white transition-all" data-hs-modal="#hs-slide-down-animation-modal">
+                                        {/* <Link to="/dashboard" className="hs-dropdown-toggle bg-blueColor text-white py-1 px-2 rounded-md" data-hs-modal="#hs-slide-down-animation-modal"> */}
                                         Dashboard
                                     </Link>
                                 ) : (
-                                    <Link to="/signin" className="hs-dropdown-toggle text-blue hover:text-blue/70 focus:outline-none rounded-sm ml-1.5 focus:ring-2 focus:ring-blue/70 focus:ring-offset-2 focus:ring-offset-white transition-all" data-hs-modal="#hs-slide-down-animation-modal">
-                                        {/* <Link to="/dashboard" className="hs-dropdown-toggle bg-blue text-white py-1 px-2 rounded-md" data-hs-modal="#hs-slide-down-animation-modal"> */}
+                                    <Link to="/signin" className="hs-dropdown-toggle text-blueColor hover:text-blueColor/70 focus:outline-none rounded-sm ml-1.5 focus:ring-2 focus:ring-blueColor/70 focus:ring-offset-2 focus:ring-offset-white transition-all" data-hs-modal="#hs-slide-down-animation-modal">
+                                        {/* <Link to="/dashboard" className="hs-dropdown-toggle bg-blueColor text-white py-1 px-2 rounded-md" data-hs-modal="#hs-slide-down-animation-modal"> */}
                                         Signin
                                     </Link>
                                     // <span className="ml-2 hs-dropdown-toggle" data-hs-modal="#hs-slide-down-animation-modal">
                                     // <span className="ml-2 hs-dropdown-toggle" data-hs-modal="#hs-slide-down-animation-modal">
-                                    //     <Link to="signin" className="font-medium rounded-full px-2 py-1 focus:ring-2 ring-offset-0 focus:ring-blue/70 duration-300">
+                                    //     <Link to="signin" className="font-medium rounded-full px-2 py-1 focus:ring-2 ring-offset-0 focus:ring-blueColor/70 duration-300">
                                     //         Signin
                                     //     </Link>
                                     // </span>

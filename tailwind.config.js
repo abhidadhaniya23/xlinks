@@ -20,7 +20,7 @@ module.exports = {
                 // "phone-card-wave": "url('./assets/phone-card-wave.svg')",
             },
             colors: {
-                blue: "#008CFF",
+                blueColor: "#008CFF",
             },
         },
     },

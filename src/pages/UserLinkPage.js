@@ -62,12 +62,12 @@ const UserLinkPage = () => {
                             <div className="mt-5">
                                 {/* {console.log(userData.googleId, user.googleId)} */}
                                 {userData.googleId === user.googleId && (
-                                    <TwitterShareButton className="font-medium !bg-blue !text-white !rounded-full flex flex-row justify-center items-center w-min !px-3.5 !py-1 ring-0 focus:ring-2 focus:ring-offset-2 focus:ring-blue duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://xlinkspro.herokuapp.com/${id}`}>
+                                    <TwitterShareButton className="font-medium !bg-blueColor !text-white !rounded-full flex flex-row justify-center items-center w-min !px-3.5 !py-1 ring-0 focus:ring-2 focus:ring-offset-2 focus:ring-blueColor duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://xlinkspro.herokuapp.com/${id}`}>
                                         <FiTwitter className="text-xl mr-2" />
                                         Share
                                     </TwitterShareButton>
                                     // <TwitterShareButton title="Checkout my profile at xLinks.Pro by @AbhiDadhaniya3" hashtags={["xlinkspro", "profile"]} url={`https://xlinkspro.herokuapp.com/${id}`}>
-                                    //     <div className="bg-blue flex flex-row font-medium justify-center items-center py-2 px-3 rounded-md text-white">
+                                    //     <div className="bg-blueColor flex flex-row font-medium justify-center items-center py-2 px-3 rounded-md text-white">
                                     //         <FiTwitter className="text-2xl mr-2" />
                                     //         Share
                                     //     </div>

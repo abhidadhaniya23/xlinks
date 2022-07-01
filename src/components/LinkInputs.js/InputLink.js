@@ -31,21 +31,21 @@ const InputLink = ({ platform, placeholder, iconName }) => {
     return (
         <>
             <div className="flex rounded-md my-3">
-                <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blue/5">
+                <div className="px-4 inline-flex items-center min-w-fit rounded-l-md border border-r-0 border-gray-200 bg-blueColor/5">
                     <span className="text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
                         {/* {platform} */}
-                        {iconName === "BsInstagram" ? <BsInstagram className="text-blue icon-style" /> : <></>}
-                        {iconName === "FiTwitter" ? <FiTwitter className="text-blue icon-style" /> : <></>}
-                        {iconName === "FiGithub" ? <FiGithub className="text-blue icon-style" /> : <></>}
-                        {iconName === "AiOutlineLinkedin" ? <AiOutlineLinkedin className="text-blue icon-style" /> : <></>}
-                        {iconName === "FiFacebook" ? <FiFacebook className="text-blue icon-style" /> : <></>}
-                        {iconName === "TbBrandDiscord" ? <TbBrandDiscord className="text-blue icon-style" /> : <></>}
-                        {iconName === "FiYoutube" ? <FiYoutube className="text-blue icon-style" /> : <></>}
-                        {iconName === "ImBlog" ? <ImBlog className="text-blue icon-style" /> : <></>}
-                        {iconName === "TbWorld" ? <TbWorld className="text-blue icon-style" /> : <></>}
-                        {iconName === "TbBrandTelegram" ? <TbBrandTelegram className="text-blue icon-style" /> : <></>}
-                        {iconName === "ImPinterest2" ? <ImPinterest2 className="text-blue icon-style" /> : <></>}
-                        {iconName === "TbCoffee" ? <TbCoffee className="text-blue icon-style" /> : <></>}
+                        {iconName === "BsInstagram" ? <BsInstagram className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "FiTwitter" ? <FiTwitter className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "FiGithub" ? <FiGithub className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "AiOutlineLinkedin" ? <AiOutlineLinkedin className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "FiFacebook" ? <FiFacebook className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "TbBrandDiscord" ? <TbBrandDiscord className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "FiYoutube" ? <FiYoutube className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "ImBlog" ? <ImBlog className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "TbWorld" ? <TbWorld className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "TbBrandTelegram" ? <TbBrandTelegram className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "ImPinterest2" ? <ImPinterest2 className="text-blueColor icon-style" /> : <></>}
+                        {iconName === "TbCoffee" ? <TbCoffee className="text-blueColor icon-style" /> : <></>}
                     </span>
                 </div>
                 <input
@@ -56,7 +56,7 @@ const InputLink = ({ platform, placeholder, iconName }) => {
                     value={platform == "instagram" ? instagram : platform == "twitter" ? twitter : platform == "github" ? github : platform == "linkedin" ? linkedin : platform == "facebook" ? facebook : platform == "discord" ? discord : platform == "youtube" ? youtube : platform == "blogs" ? blogs : platform == "website" ? website : platform == "telegram" ? telegram : platform == "pintrest" ? pintrest : platform == "buymeacoffee" ? buymeacoffee : <></>}
                     name={platform}
                     id="hs-input-with-add-on-url"
-                    className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
                     placeholder={placeholder}
                 />
             </div>

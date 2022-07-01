@@ -49,7 +49,7 @@ a {
     user-select: none;
 }
 .icon-style {
-    @apply hover:text-blue duration-200 cursor-pointer text-2xl m-2;
+    @apply hover:text-blueColor duration-200 cursor-pointer text-2xl m-2;
 }
 input,
 textarea {
@@ -57,7 +57,7 @@ textarea {
 }
 
 .input-style {
-    @apply border border-solid border-gray-300 focus:ring-1 duration-200 focus:ring-blue;
+    @apply border border-solid border-gray-300 focus:ring-1 duration-200 focus:ring-blueColor;
 }
 
 /* scroll bar */

@@ -205,99 +205,99 @@ const Dashboard = () => {
                         <div>
                             <div className="flex flex-col justify-center items-center">
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <BsInstagram className="text-blue icon-style" />
+                                            <BsInstagram className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={instagram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setinstagram(e.target.value)} placeholder="instagram.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={instagram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setinstagram(e.target.value)} placeholder="instagram.com/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiTwitter className="text-blue icon-style" />
+                                            <FiTwitter className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={twitter} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settwitter(e.target.value)} placeholder="twitter.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={twitter} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settwitter(e.target.value)} placeholder="twitter.com/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiGithub className="text-blue icon-style" />
+                                            <FiGithub className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={github} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setgithub(e.target.value)} placeholder="github.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={github} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setgithub(e.target.value)} placeholder="github.com/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <AiOutlineLinkedin className="text-blue icon-style" />
+                                            <AiOutlineLinkedin className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={linkedin} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setlinkedin(e.target.value)} placeholder="linkedin/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={linkedin} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setlinkedin(e.target.value)} placeholder="linkedin/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiFacebook className="text-blue icon-style" />
+                                            <FiFacebook className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={facebook} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setfacebook(e.target.value)} placeholder="facebook.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={facebook} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setfacebook(e.target.value)} placeholder="facebook.com/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbBrandDiscord className="text-blue icon-style" />
+                                            <TbBrandDiscord className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={discord} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setdiscord(e.target.value)} placeholder="discordapp.com/users/xxxx" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={discord} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setdiscord(e.target.value)} placeholder="discordapp.com/users/xxxx" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiYoutube className="text-blue icon-style" />
+                                            <FiYoutube className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={youtube} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setyoutube(e.target.value)} placeholder="youtube.com/c/channel-name" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={youtube} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setyoutube(e.target.value)} placeholder="youtube.com/c/channel-name" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <ImBlog className="text-blue icon-style" />
+                                            <ImBlog className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={blogs} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setblogs(e.target.value)} placeholder="Medium, Hashnode, Dev Community etc" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={blogs} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setblogs(e.target.value)} placeholder="Medium, Hashnode, Dev Community etc" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbWorld className="text-blue icon-style" />
+                                            <TbWorld className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={website} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setwebsite(e.target.value)} placeholder="Personal or any company website" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={website} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setwebsite(e.target.value)} placeholder="Personal or any company website" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbBrandTelegram className="text-blue icon-style" />
+                                            <TbBrandTelegram className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={telegram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settelegram(e.target.value)} placeholder="t.me/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={telegram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settelegram(e.target.value)} placeholder="t.me/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <ImPinterest2 className="text-blue icon-style" />
+                                            <ImPinterest2 className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={pintrest} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setpintrest(e.target.value)} placeholder="pintrest.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={pintrest} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setpintrest(e.target.value)} placeholder="pintrest.com/username" />
                                     </div>
                                 </div>
                                 <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blue/5">
+                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
                                         <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbCoffee className="text-blue icon-style" />
+                                            <TbCoffee className="text-blueColor icon-style" />
                                         </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={buymeacoffee} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setbuymeacoffee(e.target.value)} placeholder="buymeacoffee.com/username" />
+                                        <input type={"text"} name="hs-input-with-add-on-url" value={buymeacoffee} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setbuymeacoffee(e.target.value)} placeholder="buymeacoffee.com/username" />
                                     </div>
                                 </div>
 
@@ -315,7 +315,7 @@ const Dashboard = () => {
                                 <InputLink platform="buymeacoffee" iconName="TbCoffee" placeholder="buymeacoffee.com/username" /> */}
                             </div>
                         </div>
-                        <input type="submit" className="bg-blue py-3 px-4 my-10 text-white rounded-md focus:ring-2 duration-200 cursor-pointer ring-offset-2 ring-blue/30" value="Update your profile" />
+                        <input type="submit" className="bg-blueColor py-3 px-4 my-10 text-white rounded-md focus:ring-2 duration-200 cursor-pointer ring-offset-2 ring-blueColor/30" value="Update your profile" />
                     </form>
                 </div>
             )}
