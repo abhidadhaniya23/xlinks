@@ -5,7 +5,6 @@ import Navbar from "./components/navbar/Navbar";
 import UserLinkPage from "./pages/UserLinkPage";
 import googleUser from "./context/googleUser";
 import { Toast } from "./components/toast/Toast";
-import "../src/index.css";
 import Dashboard from "./pages/Dashboard";
 import Signin from "./pages/Signin";
 import Homepage from "./pages/Homepage";

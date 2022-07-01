@@ -25,7 +25,7 @@ export const GoogleLoginBtn = () => {
     // var accessToken = gapi.auth.getToken().access_token;
 
     const onSuccess = async (res) => {
-        console.log("[Login Success]currentUser:", res);
+        // console.log("[Login Success]currentUser:", res);
         const { profileObj } = res;
         setUserData(profileObj);
         const user = {
