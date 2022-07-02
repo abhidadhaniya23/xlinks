@@ -15,7 +15,7 @@ import { TbCoffee } from "react-icons/tb";
 import React from "react";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-// import InputLink from "../components/LinkInputs.js/InputLink";
+import InputLink from "../components/LinkInputs.js/InputLink";
 import googleUser from "../context/googleUser";
 import notify from "../components/toast/notify";
 import LoadingAnimation from "../components/loading/LoadingAnimation";
@@ -61,7 +61,7 @@ const Dashboard = () => {
         if (!userData.googleId) {
             // console.log(userData);
             notify("Please login to continue", "error");
-            navigate(`/`);
+            navigate(`/signin`);
         }
     }, [userData]);
 
@@ -99,7 +99,7 @@ const Dashboard = () => {
     }, [userByEmail]);
 
     const handleUsernameChange = () => {
-        console.log(userData);
+        // console.log(userData);
         if (validUsername.test(username)) {
             setSubmitForm(true);
         } else {
@@ -107,11 +107,19 @@ const Dashboard = () => {
         }
     };
 
+    const socialMediaArr = [instagram, twitter, github, linkedin, facebook, discord, youtube, blogs, website, telegram, pintrest, buymeacoffee];
+
     const onSubmit = async (event) => {
         event.preventDefault();
         if (instagram.includes(" ") || twitter.includes(" ") || github.includes(" ") || linkedin.includes(" ") || facebook.includes(" ") || discord.includes(" ") || youtube.includes(" ") || blogs.includes(" ") || website.includes(" ") || telegram.includes(" ") || pintrest.includes(" ") || buymeacoffee.includes(" ")) {
             notify("Spaces included links will be not saved, Please remove spaces from links.", "error");
         }
+        socialMediaArr.forEach((platformName) => {
+            if (!platformName.includes("https://") && platformName !== "") {
+                notify(`'${platformName}' must include https (Update with proper link)`, "error");
+                submitForm(false);
+            }
+        });
         handleUsernameChange();
         if (submitForm) {
             const data = {
@@ -203,116 +211,19 @@ const Dashboard = () => {
                         <hr className="my-5" />
                         <p className="text-red-500 text-sm">All fields aren't required but still fill some links for better profile.</p>
                         <div>
-                            <div className="flex flex-col justify-center items-center">
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <BsInstagram className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={instagram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setinstagram(e.target.value)} placeholder="instagram.com/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiTwitter className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={twitter} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settwitter(e.target.value)} placeholder="twitter.com/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiGithub className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={github} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setgithub(e.target.value)} placeholder="github.com/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <AiOutlineLinkedin className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={linkedin} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setlinkedin(e.target.value)} placeholder="linkedin/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiFacebook className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={facebook} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setfacebook(e.target.value)} placeholder="facebook.com/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbBrandDiscord className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={discord} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setdiscord(e.target.value)} placeholder="discordapp.com/users/xxxx" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <FiYoutube className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={youtube} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setyoutube(e.target.value)} placeholder="youtube.com/c/channel-name" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <ImBlog className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={blogs} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setblogs(e.target.value)} placeholder="Medium, Hashnode, Dev Community etc" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbWorld className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={website} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setwebsite(e.target.value)} placeholder="Personal or any company website" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbBrandTelegram className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={telegram} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => settelegram(e.target.value)} placeholder="t.me/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <ImPinterest2 className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={pintrest} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setpintrest(e.target.value)} placeholder="pintrest.com/username" />
-                                    </div>
-                                </div>
-                                <div className="w-full flex rounded-md my-3">
-                                    <div className="w-full inline-flex items-center rounded-l-md border border-r-0 border-gray-200 rounded-md bg-blueColor/5">
-                                        <span className="px-3 text-sm text-gray-500 flex flex-row justify-center items-center  capitalize">
-                                            <TbCoffee className="text-blueColor icon-style" />
-                                        </span>
-                                        <input type={"text"} name="hs-input-with-add-on-url" value={buymeacoffee} id="hs-input-with-add-on-url" className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400" onChange={(e) => setbuymeacoffee(e.target.value)} placeholder="buymeacoffee.com/username" />
-                                    </div>
-                                </div>
-
-                                {/* <InputLink platform="instagram" iconName="BsInstagram" placeholder="instagram.com/username" />
-                                <InputLink platform="twitter" iconName="FiTwitter" placeholder="twitter.com/username" />
-                                <InputLink platform="github" iconName="FiGithub" placeholder="github.com/username" />
-                                <InputLink platform="linkedin" iconName="AiOutlineLinkedin" placeholder="linkedin/username" />
-                                <InputLink platform="facebook" iconName="FiFacebook" placeholder="facebook.com/username" />
-                                <InputLink platform="discord" iconName="TbBrandDiscord" placeholder="discordapp.com/users/xxxx" />
-                                <InputLink platform="youtube" iconName="FiYoutube" placeholder="youtube.com/c/channel-name" />
+                            <div>
+                                <InputLink platform="instagram" iconName="BsInstagram" placeholder="https://www.instagram.com/username" />
+                                <InputLink platform="twitter" iconName="FiTwitter" placeholder="https://www.twitter.com/username" />
+                                <InputLink platform="github" iconName="FiGithub" placeholder="https://www.github.com/username" />
+                                <InputLink platform="linkedin" iconName="AiOutlineLinkedin" placeholder="https://www.linkedin/username" />
+                                <InputLink platform="facebook" iconName="FiFacebook" placeholder="https://www.facebook.com/username" />
+                                <InputLink platform="discord" iconName="TbBrandDiscord" placeholder="https://www.discordapp.com/users/xxxx" />
+                                <InputLink platform="youtube" iconName="FiYoutube" placeholder="https://www.youtube.com/c/channel-name" />
                                 <InputLink platform="blogs" iconName="ImBlog" placeholder="Medium, Hashnode, Dev Community etc" />
                                 <InputLink platform="website" iconName="TbWorld" placeholder="Personal or any company website" />
-                                <InputLink platform="telegram" iconName="TbBrandTelegram" placeholder="t.me/username" />
-                                <InputLink platform="pintrest" iconName="ImPinterest2" placeholder="pintrest.com/username" />
-                                <InputLink platform="buymeacoffee" iconName="TbCoffee" placeholder="buymeacoffee.com/username" /> */}
+                                <InputLink platform="telegram" iconName="TbBrandTelegram" placeholder="https://www.t.me/username" />
+                                <InputLink platform="pintrest" iconName="ImPinterest2" placeholder="https://www.pintrest.com/username" />
+                                <InputLink platform="buymeacoffee" iconName="TbCoffee" placeholder="https://www.buymeacoffee.com/username" />
                             </div>
                         </div>
                         <input type="submit" className="bg-blueColor py-3 px-4 my-10 text-white rounded-md focus:ring-2 duration-200 cursor-pointer ring-offset-2 ring-blueColor/30" value="Update your profile" />

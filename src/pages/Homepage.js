@@ -14,11 +14,11 @@ const Homepage = () => {
         <>
             <Helmet>
                 <title>xLinks.Pro</title>
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="xLinks.Pro - Create awesome bio profile" />
-                {/* <meta name="twitter:url" content={`https://www.xlinks.pro/${id}`} /> */}
+                <meta name="twitter:url" content={`https://www.xlinks.pro/`} />
                 <meta name="twitter:description" content="A platform where user can create bio link profile for different social media platforms." />
                 <meta name="twitter:image" content="https://cdn.woorise.com/wp-content/uploads/2020/10/bio-link-tools.png" />
-                <meta name="twitter:card" content="summary" />
                 <meta property="og:title" content="xLinks.Pro - Create awesome bio profile" />
                 <meta property="og:type" content="article" />
                 <meta property="og:description" content="A platform where user can create bio link profile for different social media platforms." />
@@ -40,7 +40,7 @@ const Homepage = () => {
                     <img src={profileCard} alt="Abhi Dadhaniya xLinks.Pro Profile" className={`${isMobile ? "phone-card-shadow" : "card-shadow"} -z-20 mt-16 img-shadow w-[24rem] md:w-[38rem]`} />
                     {/* <img src={arrowSvg} className="w-[20rem] mt-32 -mb-4 md:-mt-7" alt="" /> */}
                     <img src={arrowSvg} className="w-[15rem] md:w-[20rem] -mt-5" alt="" />
-                    <div className=" bg-blueColor py-3 px-5 rounded-full tracking-wider text-white flex flex-row justify-center items-center pr-4">
+                    <div className=" bg-blueColor py-2 pl-4 pr-6 rounded-full tracking-wider text-white flex flex-row justify-center items-center">
                         <TbWorld className="icon-style rounded-full bg-white text-blueColor" />
                         <span>
                             xlinks.pro/

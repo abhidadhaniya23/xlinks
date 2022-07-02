@@ -56,7 +56,7 @@ const InputLink = ({ platform, placeholder, iconName }) => {
                     value={platform == "instagram" ? instagram : platform == "twitter" ? twitter : platform == "github" ? github : platform == "linkedin" ? linkedin : platform == "facebook" ? facebook : platform == "discord" ? discord : platform == "youtube" ? youtube : platform == "blogs" ? blogs : platform == "website" ? website : platform == "telegram" ? telegram : platform == "pintrest" ? pintrest : platform == "buymeacoffee" ? buymeacoffee : <></>}
                     name={platform}
                     id="hs-input-with-add-on-url"
-                    className="py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                    className={`py-3 px-4 pr-11 block w-full input-style rounded-r-md text-sm focus:z-10 focus:border-blueColor-500 focus:ring-blueColor-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400`}
                     placeholder={placeholder}
                 />
             </div>

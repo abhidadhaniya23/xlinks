@@ -13,11 +13,16 @@ import logo from "../../../src/assets/logo.png";
 // import google login and logout buttons
 import { GoogleLogoutBtn } from "../GoogleBtn/Google";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 import { TwitterShareButton } from "react-share";
 
 const Navbar = () => {
     const { userData } = useContext(googleUser);
     const [user, setUser] = useState(null);
+
+    const location = useLocation();
+
+    const { username } = useContext(googleUser);
 
     const getUserData = async () => {
         // console.log(userData.googleId);
@@ -27,13 +32,8 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        // console.log("running navbar useEffect");
         getUserData();
-    }, [userData]);
-
-    useEffect(() => {
-        // console.log(`running navbar's empty useEffect`);
-    }, [user]);
+    }, [location]);
 
     return (
         <>
@@ -63,7 +63,8 @@ const Navbar = () => {
                                 {/* <div className=""> */}
                                 {/* </div> */}
                             </TwitterShareButton>
-                            {userData !== {} && user && user.username ? (
+                            {/* {userData !== {} && user && user.username ? ( */}
+                            {user && user.username ? (
                                 <>
                                     <Link className="font-medium text-blueColor-500" aria-current="page" to={`${user.username}`}>
                                         <CgProfile className="float-left mr-1 text-lg" />

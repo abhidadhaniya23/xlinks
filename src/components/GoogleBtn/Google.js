@@ -45,7 +45,7 @@ export const GoogleLoginBtn = () => {
     };
     const onFailure = (res) => {
         notify("Login Failed.", "error");
-        console.log("[Login failed]res:", res);
+        // console.log("[Login failed]res:", res);
     };
     return (
         <GoogleLogin
