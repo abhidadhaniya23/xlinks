@@ -157,7 +157,7 @@ const Dashboard = () => {
             {userByEmail && !loading && (
                 <div className="container px-10 md:px-32 lg:px-[24rem] my-20">
                     {/* <img className="w-20 mx-auto my-5 h-auto rounded-full" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" referrerPolicy="no-referrer" /> */}
-                    <img className="w-32 mx-auto my-5 h-auto rounded-full shadow-sm" src={userData.imageUrl.replace("w=s96-c", "w=s240-c")} alt={userData.name} referrerPolicy="no-referrer" />
+                    <img className="w-32 mx-auto my-5 h-auto rounded-full shadow-sm" src={userData.imageUrl && userData.imageUrl.replace("w=s96-c", "w=s240-c")} alt={userData.name} referrerPolicy="no-referrer" />
                     <div>
                         <h2 className="my-2 text-5xl text-center font-bold text-gray-800">Dashboard</h2>
                         <hr className="my-5" />

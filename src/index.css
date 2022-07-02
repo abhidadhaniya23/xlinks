@@ -20,12 +20,12 @@
     }
 }
 .phone-card-shadow {
-    -webkit-filter: drop-shadow(0px 5px 30px #8eceff);
-    filter: drop-shadow(0px 5px 30px #8eceff);
+    -webkit-filter: drop-shadow(0px 5px 30px #a2d7ff);
+    filter: drop-shadow(0px 5px 30px #a1d6ff);
 }
 .card-shadow {
-    -webkit-filter: drop-shadow(0px 5px 30px #e6f4ff);
-    filter: drop-shadow(0px 5px 30px #e6f4ff);
+    -webkit-filter: drop-shadow(0px 5px 30px #dcf0ff);
+    filter: drop-shadow(0px 5px 30px #d3ecff);
 }
 .img-shadow {
     /* @apply phone-card-shadow md:screen-card-shadow; */

@@ -32,13 +32,14 @@ const Homepage = () => {
                         <h1 className="text-6xl font-bold heading-font">xLinks.Pro</h1>
                         <h2 className="font-medium my-2 text-2xl leading-[2.3rem] md:leading-10 px-5 md:px-0 md:text-2xl text-gray-800">Create your bio profile for free</h2>
                     </div>
-                    <Link to="/signin" className="text-xl md:text-2xl mt-2 md:mt-6 md:mb-5 text-blueColor flex flex-row justify-center pr-2 items-center hover:text-blueColor/80 focus:outline-none rounded-full focus:ring-2 focus:ring-blueColor/70 focus:ring-offset-2 focus:ring-offset-white transition-all">
+                    <Link to="/signin" className="text-lg md:text-xl py-2 bg-blueColor/5 mt-5 md:mt-6 md:mb-5 text-blueColor flex flex-row justify-center pr-6 pl-3 items-center hover:text-blueColor/80 focus:outline-none rounded-full focus:ring-2 focus:ring-blueColor/70 focus:ring-offset-2 focus:ring-offset-white transition-all">
                         <FcGoogle className="icon-style" />
                         Signin with Google
                     </Link>
 
-                    <img src={profileCard} alt="Abhi Dadhaniya xLinks.Pro Profile" className={`${isMobile ? "phone-card-shadow" : "card-shadow"} -z-20 img-shadow mt-16 -mb-24 md:-mb-36 scale-[2.4] md:scale-100 md:-my-36`} />
-                    <img src={arrowSvg} className="w-[24rem] mt-32 -mb-4 md:-mt-7" alt="" />
+                    <img src={profileCard} alt="Abhi Dadhaniya xLinks.Pro Profile" className={`${isMobile ? "phone-card-shadow" : "card-shadow"} -z-20 mt-16 img-shadow w-[24rem] md:w-[38rem]`} />
+                    {/* <img src={arrowSvg} className="w-[20rem] mt-32 -mb-4 md:-mt-7" alt="" /> */}
+                    <img src={arrowSvg} className="w-[15rem] md:w-[20rem] -mt-5" alt="" />
                     <div className=" bg-blueColor py-3 px-5 rounded-full tracking-wider text-white flex flex-row justify-center items-center pr-4">
                         <TbWorld className="icon-style rounded-full bg-white text-blueColor" />
                         <span>
