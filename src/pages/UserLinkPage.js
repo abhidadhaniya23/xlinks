@@ -42,8 +42,8 @@ const UserLinkPage = () => {
         <>
             <Helmet>
                 <title>{`${id} | xLinks.Pro`}</title>
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@AbhiDadhaniya3" />
+                <meta name="twitter:card" content="summary" />
+                {/* <meta name="twitter:site" content="@AbhiDadhaniya3" /> */}
                 <meta name="twitter:url" content={`https://www.xlinks.pro/${id}`} />
                 <meta name="twitter:title" content={`My xLinks.Pro Profile`} />
                 <meta name="twitter:description" content="I've create my profile in xLinks.pro" />

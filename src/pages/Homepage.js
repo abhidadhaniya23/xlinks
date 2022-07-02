@@ -14,6 +14,11 @@ const Homepage = () => {
         <>
             <Helmet>
                 <title>xLinks.Pro</title>
+                <meta name="twitter:title" content="xLinks.Pro - Create awesome bio profile" />
+                {/* <meta name="twitter:url" content={`https://www.xlinks.pro/${id}`} /> */}
+                <meta name="twitter:description" content="A platform where user can create bio link profile for different social media platforms." />
+                <meta name="twitter:image" content="https://cdn.woorise.com/wp-content/uploads/2020/10/bio-link-tools.png" />
+                <meta name="twitter:card" content="summary" />
             </Helmet>
             <section className="text-font flex flex-col justify-center items-center overflow-x-hidden">
                 <div className="flex flex-col justify-center text-center items-center container mx-auto py-10">
