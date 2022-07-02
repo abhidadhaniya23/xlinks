@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import UserLinkPage from "./pages/UserLinkPage";
 import googleUser from "./context/googleUser";
@@ -9,6 +6,13 @@ import Dashboard from "./pages/Dashboard";
 import Signin from "./pages/Signin";
 import Homepage from "./pages/Homepage";
 import NotFoundPage from "./pages/NotFoundPage";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useParams } from "react-router-dom";
+// google analytics import
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-TMERMER0GR"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
     const [userData, setUserData] = useState({});
@@ -30,7 +34,9 @@ function App() {
     const [loading, setLoading] = useState(false);
 
     const { id } = useParams();
-    useEffect(() => {}, [id]);
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, [id]);
 
     return (
         <googleUser.Provider value={{ loading, setLoading, userData, setUserData, instagram, setinstagram, twitter, settwitter, github, setgithub, linkedin, setlinkedin, facebook, setfacebook, discord, setdiscord, youtube, setyoutube, blogs, setblogs, website, setwebsite, telegram, settelegram, pintrest, setpintrest, buymeacoffee, setbuymeacoffee, username, setUsername, bio, setBio, profession, setProfession }}>
