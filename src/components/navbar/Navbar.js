@@ -57,7 +57,7 @@ const Navbar = () => {
                     </div>
                     <div id="navbar-collapse-slide-up" className="hidden basis-full grow sm:block">
                         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-                            <TwitterShareButton className="font-medium text-white rounded-full flex flex-row justify-center items-center w-min !px-2 !py-1 ring-0 focus:ring-2 ring-offset-0 focus:ring-white/50 duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://xlinkspro.herokuapp.com/`}>
+                            <TwitterShareButton className="font-medium text-white rounded-full flex flex-row justify-center items-center w-min !px-2 !py-1 ring-0 focus:ring-2 ring-offset-0 focus:ring-white/50 duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://www.xlinks.pro/`}>
                                 <FiTwitter className="text-xl mr-2" />
                                 Share
                                 {/* <div className=""> */}

@@ -44,7 +44,7 @@ const UserLinkPage = () => {
                 <title>{`${id} | xLinks.Pro`}</title>
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@AbhiDadhaniya3" />
-                <meta name="twitter:url" content={`https://xlinkspro.herokuapp.com/${id}`} />
+                <meta name="twitter:url" content={`https://www.xlinks.pro/${id}`} />
                 <meta name="twitter:title" content={`My xLinks.Pro Profile`} />
                 <meta name="twitter:description" content="I've create my profile in xLinks.pro" />
                 <meta name="twitter:creator" content="@AbhiDadhaniya3" />
@@ -62,7 +62,7 @@ const UserLinkPage = () => {
                             <div className="mt-5">
                                 {/* {console.log(userData.googleId, user.googleId)} */}
                                 {userData.googleId === user.googleId && (
-                                    <TwitterShareButton className="font-medium !bg-blueColor !text-white !rounded-full flex flex-row justify-center items-center w-min !px-3.5 !py-1 ring-0 focus:ring-2 focus:ring-offset-2 focus:ring-blueColor duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://xlinkspro.herokuapp.com/${id}`}>
+                                    <TwitterShareButton className="font-medium !bg-blueColor !text-white !rounded-full flex flex-row justify-center items-center w-min !px-3.5 !py-1 ring-0 focus:ring-2 focus:ring-offset-2 focus:ring-blueColor duration-300" title="Checkout xLinks.pro by @AbhiDadhaniya3 to create awesome bio profiles." hashtags={["xlinkspro", "profile"]} url={`https://www.xlinks.pro/${id}`}>
                                         <FiTwitter className="text-xl mr-2" />
                                         Share
                                     </TwitterShareButton>
