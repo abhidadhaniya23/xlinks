@@ -1,10 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
-import UserLinkPage from "./pages/UserLinkPage";
 import googleUser from "./context/googleUser";
 import { Toast } from "./components/toast/Toast";
-import Dashboard from "./pages/Dashboard";
-import Signin from "./pages/Signin";
-import Homepage from "./pages/Homepage";
 import NotFoundPage from "./pages/NotFoundPage";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -44,10 +40,10 @@ function App() {
                 <Navbar />
                 <Toast />
                 <Routes>
-                    <Route path="/" exact element={<Homepage />} />
+                    {/* <Route path="/" exact element={<Homepage />} />
                     <Route path="/dashboard" exact element={<Dashboard />} />
                     <Route path="/:id" exact element={<UserLinkPage />} />
-                    <Route path="/signin" exact element={<Signin />} />
+                    <Route path="/signin" exact element={<Signin />} /> */}
                     <Route path="*" exact element={<NotFoundPage />} />
                 </Routes>
             </BrowserRouter>
