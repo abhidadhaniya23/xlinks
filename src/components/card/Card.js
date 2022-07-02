@@ -18,7 +18,7 @@ const Card = ({ userData }) => {
     return (
         <div className="bg-white shadow-2xl p-4 md:p-10 rounded-lg flex flex-col justify-center items-center container mx-auto w-11/12 md:w-[40rem]">
             {/* <img src={"https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=396"} alt={user.name} className="-mt-28 w-40 shadow-lg bg-white rounded-full p-2" /> */}
-            <img src={userData.profilePic} alt={userData.fullName} className="-mt-20 md:-mt-28 w-28 md:w-40 shadow-lg bg-white rounded-full p-2" referrerPolicy="no-referrer" rel="noreferrer" />
+            <img src={userData.profilePic.replace("w=s96-c", "w=s240-c")} alt={userData.fullName} className="-mt-20 md:-mt-28 w-28 md:w-40 shadow-lg bg-white rounded-full p-2" referrerPolicy="no-referrer" rel="noreferrer" />
             <h1 className="text-3xl text-center md:text-5xl font-bold mt-5 md:mt-8">{userData.fullName}</h1>
             {userData.profession && <h4 className="text-lg md:text-xl mt-2 my-5 text-blueColor/90">~ {userData.profession}</h4>}
 
