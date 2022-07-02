@@ -19,6 +19,11 @@ const Homepage = () => {
                 <meta name="twitter:description" content="A platform where user can create bio link profile for different social media platforms." />
                 <meta name="twitter:image" content="https://cdn.woorise.com/wp-content/uploads/2020/10/bio-link-tools.png" />
                 <meta name="twitter:card" content="summary" />
+                <meta property="og:title" content="xLinks.Pro - Create awesome bio profile" />
+                <meta property="og:type" content="article" />
+                <meta property="og:description" content="A platform where user can create bio link profile for different social media platforms." />
+                <meta property="og:image" content="https://cdn.woorise.com/wp-content/uploads/2020/10/bio-link-tools.png" />
+                <meta property="og:url" content="https://www.xlinks.pro/" />
             </Helmet>
             <section className="text-font flex flex-col justify-center items-center overflow-x-hidden">
                 <div className="flex flex-col justify-center text-center items-center container mx-auto py-10">
