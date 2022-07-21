@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
 // google analytics import
 import ReactGA from "react-ga";
+import Admin from "./pages/Admin";
 const TRACKING_ID = "G-TMERMER0GR"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -48,6 +49,7 @@ function App() {
                     <Route path="/dashboard" exact element={<Dashboard />} />
                     <Route path="/:id" exact element={<UserLinkPage />} />
                     <Route path="/signin" exact element={<Signin />} />
+                    <Route path="/admin" exact element={<Admin />} />
                     <Route path="*" exact element={<NotFoundPage />} />
                 </Routes>
             </BrowserRouter>
