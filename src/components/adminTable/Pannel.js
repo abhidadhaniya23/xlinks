@@ -21,7 +21,7 @@ const Pannel = () => {
     }, [profileData]);
     return (
         <>
-            <div className="flex flex-col font-inter p-10">
+            <div className="flex flex-col font-inter p-2 md:p-10">
                 <div className="-m-1.5 overflow-x-auto">
                     <div className="p-1.5 min-w-full inline-block align-middle">
                         <div className="overflow-hidden">
