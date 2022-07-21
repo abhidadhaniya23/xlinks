@@ -4,14 +4,12 @@ import TableRow from "./TableRow";
 
 const Pannel = () => {
     const [profileData, setProfileData] = useState([]);
-    const [userData, setUserData] = useState([]);
     const [availableProfiles, setAvailableProfiles] = useState(0);
     const getData = async () => {
         fetch(`${process.env.REACT_APP_BACKEND_DOMAIN}/api/user/get`)
             .then((res) => res.json())
             .then((data) => {
                 setProfileData(data.data.reverse());
-                // setUserData(profileData.reverse());
             });
     };
     useEffect(() => {

@@ -10,7 +10,6 @@ const Admin = () => {
     useEffect(() => {
         const localUsername = localStorage.getItem("username");
         const localPassword = localStorage.getItem("password");
-        console.log(localUsername, process.env.REACT_APP_USERNAME);
         if (localUsername === process.env.REACT_APP_USERNAME && localPassword === process.env.REACT_APP_PASSWORD) {
             setLoggedIn(true);
         }
