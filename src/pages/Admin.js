@@ -32,7 +32,7 @@ const Admin = () => {
                 <section className="min-h-screen flex flex-row justify-center items-center">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-4xl font-bold">Admin</h1>
-                        <form onSubmit={handleSubmitForm} className="my-10 flex flex-col justify-center items-center w-[30rem]">
+                        <form onSubmit={handleSubmitForm} className="my-10 flex flex-col justify-center items-center w-3/4 md:w-[30rem]">
                             <input type="text" value={username} placeholder="Username" className="my-2 py-3 px-4 w-full bg-blueColor/10 rounded-md" onChange={(e) => setUsername(e.target.value)} />
                             <input type="password" value={password} placeholder="Password" className="my-2 py-3 px-4 w-full bg-blueColor/10 rounded-md" onChange={(e) => setPassword(e.target.value)} />
                             <button className="bg-blueColor mt-4 w-full hover:bg-blue-700 duration-200 text-white font-bold py-2 px-4 rounded" type="submit">
